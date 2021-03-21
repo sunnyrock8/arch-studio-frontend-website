@@ -1,0 +1,39 @@
+.push-left-enter {
+  transform: translateX(100%);
+}
+
+.push-left-enter-active {
+  transform: translateX(0);
+  transition: all 1.5s ease-out;
+}
+
+.push-left-exit-active {
+  transform: translateX(-100%);
+  transition: all 1.5s ease-out;
+}
+
+.push-left-exit-done {
+  transform: translateX(-100%);
+}
+
+.fade-enter {
+  opacity: 0.75;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: all 1.5s ease-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 1;
+  transition: all 1.5s ease-out;
+}
+
+.fade-exit-done {
+  opacity: 1;
+}

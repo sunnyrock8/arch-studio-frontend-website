@@ -1,0 +1,91 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  &-welcome {
+    position: relative;
+    margin-top: 23.5rem;
+
+    display: flex;
+
+    width: 80%;
+
+    &-text {
+      width: 80%;
+    }
+
+    & h1 {
+      position: relative;
+      width: 65%;
+      &::before {
+        content: "Welcome";
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #eeeff4;
+        font-weight: 600;
+        font-size: 20rem;
+        line-height: 20rem;
+        transform: translate(-24%, -90%);
+        z-index: 2;
+      }
+    }
+
+    & p {
+      width: 70%;
+    }
+
+    &-img {
+      position: absolute;
+      top: -4rem;
+      right: 0;
+      width: 35rem;
+    }
+  }
+
+  &-about-us {
+    width: 100%;
+    padding: 19rem 0 20.6rem 25rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+      url("./about-us-image.jpg");
+    background-size: cover;
+    margin-top: 20rem;
+
+    & h1 {
+      color: #fff;
+    }
+  }
+
+  &-featured {
+    width: 100%;
+    margin-top: 20rem;
+
+    &-row {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      grid-gap: 3rem;
+    }
+  }
+}
+
+.heading {
+  color: #1b1d23;
+  font-weight: 600;
+  font-size: 5.6rem;
+  letter-spacing: -2px;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #60636d;
+  line-height: 2.5rem;
+}
